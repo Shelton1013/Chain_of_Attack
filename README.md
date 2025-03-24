@@ -4,8 +4,8 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 
 
 ## 🚀 News
-- [28/02/2025] Chain of Attack is accepted by CVPR 2025!
-- [24/11/2024] The manuscript can be found on [arXiv](https://arxiv.org/pdf/2411.15720).
+- [28/02/2025] **Chain of Attack** is accepted by CVPR 2025!
+- [24/11/2024] We introduce **Chain of Attack**, a new and efficient transfer-based attacking strategy. The manuscript can be found on [arXiv](https://arxiv.org/pdf/2411.15720).
 
   
 ## 📚Citation
