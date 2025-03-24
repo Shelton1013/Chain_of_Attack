@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "9"
+# os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 import argparse
 import random
