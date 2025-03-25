@@ -14,7 +14,7 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 ## Chain of Attack
 In the adversarial example generation process of CoA, a lightweight VLM [ClipCap](https://arxiv.org/pdf/2111.09734) is adopted as the image-to-text model. The pre-trained [weights](https://drive.google.com/file/d/14pXWwB4Zm82rsDdvbGguLfx9F8aM7ovT/view?usp=sharing) and inference code of ClipCap can be found [here](https://github.com/rmokady/CLIP_prefix_caption).
 
-Training (please set the path properly)
+Training (please set the path properly):
 ```
 python train.py \
         --batch_size 1 \
@@ -48,7 +48,7 @@ python eval.py \
     --pred_text_path "generated image caption" \
     --tgt_text_path  "target caption"\
 ```
-- LLM-based Attack Success Rate (ASR) – This metric can be computed using GPT-4 with our provided prompt. See details in ASR.md under the ASR folder.
+- LLM-based Attack Success Rate (ASR) – This metric can be computed using GPT-4 with our provided prompt. See details in `ASR.md` under the `ASR` folder.
 
   
 ## 📚Citation
