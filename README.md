@@ -12,7 +12,7 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 - Target image: the target images can be generated using [Stable Diffusion](https://github.com/CompVis/stable-diffusion), [DALL-E](https://arxiv.org/pdf/2102.12092), or [Midjourney](https://www.midjourney.com/) based on the target texts.
 
 ## Chain of Attack
-In the adversarial example generation process of CoA, a lightweight VLM [ClipCap](https://arxiv.org/pdf/2111.09734) is adopted as the image-to-text model. The pre-trained [weights](https://drive.google.com/file/d/14pXWwB4Zm82rsDdvbGguLfx9F8aM7ovT/view?usp=sharing) and inference code of ClipCap can be found [here](https://github.com/rmokady/CLIP_prefix_caption).
+In the adversarial example generation process of **CoA**, a lightweight VLM [ClipCap](https://arxiv.org/pdf/2111.09734) is adopted as the image-to-text model. The pre-trained [weights](https://drive.google.com/file/d/14pXWwB4Zm82rsDdvbGguLfx9F8aM7ovT/view?usp=sharing) and inference code of ClipCap can be found [here](https://github.com/rmokady/CLIP_prefix_caption).
 
 Training (please set the path properly):
 ```
