@@ -8,7 +8,7 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 - [24/11/2024] We introduce **Chain of Attack**, a new and efficient transfer-based attacking strategy for VLMs. The manuscript can be found on [arXiv](https://arxiv.org/pdf/2411.15720).
 
 ## Target image-text pairs
-- Target text (caption): the targeted reference texts can be obtained by sampling from [MS-COCO](https://cocodataset.org/).
+- Target text (caption): the targeted reference texts can be obtained by sampling from [MS-COCO](https://cocodataset.org/) captions.
 - Target image: the target images can be generated using [Stable Diffusion](https://github.com/CompVis/stable-diffusion), [DALL-E](https://arxiv.org/pdf/2102.12092), or [Midjourney](https://www.midjourney.com/) based on the target texts.
 
 ## Chain of Attack
