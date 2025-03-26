@@ -404,8 +404,8 @@ import os
 
 FLAGS = flags.FLAGS
 config_flags.DEFINE_config_file(
-    "config", "/home/pxieaf/AttackVLM/stable-diffusion/unidiffuser/configs/sample_unidiffuser_v1.py", "Configuration.", lock_config=False)
-flags.DEFINE_string("nnet_path", "/home/pxieaf/AttackVLM/stable-diffusion/unidiffuser/models/uvit_v1.pth", "The nnet to evaluate.")
+    "config", "/Unidiffuser/configs/sample_unidiffuser_v1.py", "Configuration.", lock_config=False)
+flags.DEFINE_string("nnet_path", "/Unidiffuser/models/uvit_v1.pth", "The nnet to evaluate.")
 flags.DEFINE_string("output_path", "img_caption", "dir to write results to")
 flags.DEFINE_string("prompt", "an elephant under the sea", "the prompt for text-to-image generation and text variation")
 flags.DEFINE_string("directory", "image dataset path", "the image dataset path for image-to-text generation and image variation")
