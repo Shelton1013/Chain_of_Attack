@@ -59,7 +59,7 @@ python eval.py \
     --batch_size 100 \
     --num_samples 10000 \
     --pred_text_path [generated_text_path] \
-    --tgt_text_path  [target_text_path]
+    --tgt_text_path [target_text_path]
 ```
 - LLM-based Attack Success Rate (ASR) – This metric can be computed using GPT-4 with our provided prompt. See details in `ASR.md` under the `ASR` folder.
 
