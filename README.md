@@ -15,9 +15,6 @@ python minigpt4_img2text.py
     --cfg-path "/home/pxieaf/AttackVLM/MiniGPT-4/MiniGPT-4/eval_configs/minigpt4_eval.yaml" \
     --gpu-id 0 \
     --query 'describe this image in one sentence.' \
-    --batch_size 2 \
-    --batch_size_in_gen 3 \
-    --num_samples 10 \
     --dataset_path "your generated image dataset path"\
     --save_path "save caption path" \
 ```
