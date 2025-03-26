@@ -11,6 +11,8 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 - Clean image: the clean images are from the validation set of [ImageNet-1K](https://www.image-net.org/).
 - Clean text: [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) is adopted to generate clean descriptions for the clean images. The usage is as follows:
 ```
+cd Clean_text_generation_minigpt4
+
 python minigpt4_img2text.py
     --cfg-path minigpt4_eval.yaml \
     --gpu-id 0 \
