@@ -9,14 +9,14 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 
 ## Preparation of clean image-text pairs
 - Clean image: the clean images are from the validation set of [ImageNet-1K](https://www.image-net.org/).
-- Clean text: [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) is adopted to generate clean descriptions for the clean images.
+- Clean text: [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) is adopted to generate clean descriptions for the clean images. The usage is as follows:
 ```
 python minigpt4_img2text.py
-    --cfg-path "minigpt4_eval.yaml" \
+    --cfg-path minigpt4_eval.yaml \
     --gpu-id 0 \
-    --query 'describe this image in one sentence.' \
-    --dataset_path "your generated image dataset path"\
-    --save_path "save caption path" \
+    --query "describe this image in one sentence." \
+    --dataset_path [clean_image_path] \
+    --save_path [caption_save_path]
 ```
 
 
@@ -32,23 +32,23 @@ Training (please set the path properly):
 python train.py \
         --batch_size 1 \
         --num_samples 10000 \
-        --input_res 224\
+        --input_res 224 \
         --clip_encoder ViT-B/32 \
         --alpha 1.0 \
         --p_neg 0.7 \
         --epsilon 8 \
         --pgd_steps 100 \
         --a_weight 0.3 \
-        --speed_up False\
+        --speed_up False \
         --update_steps 1 \
-        --output "/COA/your_output_folder"\
-        --cle_data_path "/COA/datasets/dataset_name"\
-        --tgt_data_path "/COA/generated_targeted_images" \
-        --model_path "/COA/clip_prefix_model/conceptual_weights.pt" \
+        --output [output_folder] \
+        --cle_data_path [clean_dataset_path] \
+        --tgt_data_path [target_image_path] \
+        --model_path clip_prefix_model/conceptual_weights.pt \
         --prefix_length 10 \
-        --tgt_file_path "/COA/coco_captions_1000.txt" \
-        --cle_file_path "/COA/img_caption/llava_textvqa.txt" \
-        --fusion_type "add_weight" \
+        --tgt_file_path [your_path]/coco_captions_1000.txt \
+        --cle_file_path [your_path]/llava_textvqa.txt \
+        --fusion_type add_weight
 ```
 
 ## 🔍Evaluation
@@ -56,10 +56,10 @@ python train.py \
 - CLIP Score: This metric can be computed using the following script.
 ```
 python eval.py \
-    --batch_size 100\
-    --num_samples 10000\
-    --pred_text_path "generated image caption" \
-    --tgt_text_path  "target caption"\
+    --batch_size 100 \
+    --num_samples 10000 \
+    --pred_text_path [generated_text_path] \
+    --tgt_text_path  [target_text_path]
 ```
 - LLM-based Attack Success Rate (ASR) – This metric can be computed using GPT-4 with our provided prompt. See details in `ASR.md` under the `ASR` folder.
 
