@@ -14,7 +14,7 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 cd Clean_text_generation_minigpt4
 
 python minigpt4_img2text.py
-    --cfg-path minigpt4_eval.yaml \
+    --cfg-path "minigpt4_eval.yaml" \
     --gpu-id 0 \
     --query "describe this image in one sentence." \
     --dataset_path [clean_image_path] \
@@ -46,10 +46,10 @@ python train.py \
         --output [output_folder] \
         --cle_data_path [clean_dataset_path] \
         --tgt_data_path [target_image_path] \
-        --model_path clip_prefix_model/conceptual_weights.pt \
+        --model_path "clip_prefix_model/conceptual_weights.pt" \
         --prefix_length 10 \
-        --tgt_file_path [your_path]/coco_captions_1000.txt \
-        --cle_file_path [your_path]/llava_textvqa.txt \
+        --tgt_file_path "[your_path]/coco_captions_1000.txt" \
+        --cle_file_path "[your_path]/llava_textvqa.txt" \
         --fusion_type add_weight
 ```
 
