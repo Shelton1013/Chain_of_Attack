@@ -10,6 +10,18 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 ## Preparation of clean image-text pairs
 - Clean image: the clean images are from the validation set of [ImageNet-1K](https://www.image-net.org/).
 - Clean text: [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) is adopted to generate clean descriptions for the clean images.
+```
+python minigpt4_img2text.py
+    --cfg-path "/home/pxieaf/AttackVLM/MiniGPT-4/MiniGPT-4/eval_configs/minigpt4_eval.yaml" \
+    --gpu-id 0 \
+    --query 'describe this image in one sentence.' \
+    --batch_size 2 \
+    --batch_size_in_gen 3 \
+    --num_samples 10 \
+    --dataset_path "your generated image dataset path"\
+    --save_path "save caption path" \
+```
+
 
 ## Preparation of target image-text pairs
 - Target text (caption): the targeted reference texts can be obtained by sampling from [MS-COCO](https://cocodataset.org/) captions. To further improve the attacking performance, we adopt GPT-4 to extract the key information of the sampled target texts.
