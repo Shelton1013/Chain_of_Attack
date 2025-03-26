@@ -76,14 +76,9 @@ if __name__ == "__main__":
     
     # obtain text in batch
     parser.add_argument("--query", default='describe this image in one sentence.', type=str)
-    
-    parser.add_argument("--output_path", default="minigpt4_tmp", type=str)
-    parser.add_argument("--batch_size", default=2, type=int)
-    parser.add_argument("--batch_size_in_gen", default=3, type=int)
-    parser.add_argument("--num_samples", default=10, type=int)
 
-    parser.add_argument("--dataset_path", default="your generated image dataset path", type=int)
-    parser.add_argument("--save_path", default="save caption path", type=int)
+    parser.add_argument("--dataset_path", default="your generated image dataset path", type=str)
+    parser.add_argument("--save_path", default="save caption path", type=str)
 
     args = parser.parse_args()
     
