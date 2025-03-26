@@ -1,1 +1,1 @@
-The datasets needed are Targeted image and Clean(Origin) image.
+Please put the (original) clean image data and target image data here.

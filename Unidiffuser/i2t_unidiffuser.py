@@ -17,6 +17,10 @@ import clip
 from PIL import Image
 import time
 
+from absl import flags
+from absl import app
+from ml_collections import config_flags
+import os
 
 def stable_diffusion_beta_schedule(linear_start=0.00085, linear_end=0.0120, n_timestep=1000):
     _betas = (
@@ -395,11 +399,6 @@ def evaluate(config):
             print(f'\nGPU memory usage: {torch.cuda.max_memory_reserved() / 1024 ** 3:.2f} GB')
             print(f'\nresults are saved in {os.path.join(config.output_path, config.mode)} :)')
         
-
-from absl import flags
-from absl import app
-from ml_collections import config_flags
-import os
 
 
 FLAGS = flags.FLAGS
