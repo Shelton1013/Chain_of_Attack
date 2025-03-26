@@ -12,7 +12,7 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 - Clean text: [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) is adopted to generate clean descriptions for the clean images.
 ```
 python minigpt4_img2text.py
-    --cfg-path "/home/pxieaf/AttackVLM/MiniGPT-4/MiniGPT-4/eval_configs/minigpt4_eval.yaml" \
+    --cfg-path "minigpt4_eval.yaml" \
     --gpu-id 0 \
     --query 'describe this image in one sentence.' \
     --dataset_path "your generated image dataset path"\
