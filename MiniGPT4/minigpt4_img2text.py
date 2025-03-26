@@ -64,7 +64,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Demo")
     
     # minigpt-4
-    parser.add_argument("--cfg-path", default="/home/pxieaf/AttackVLM/MiniGPT-4/MiniGPT-4/eval_configs/minigpt4_eval.yaml", help="path to configuration file.")
+    parser.add_argument("--cfg-path", default="minigpt4_eval.yaml", help="path to configuration file.")
     parser.add_argument("--gpu-id", type=int, default=0, help="specify the gpu to load the model.")
     parser.add_argument(
         "--options",
