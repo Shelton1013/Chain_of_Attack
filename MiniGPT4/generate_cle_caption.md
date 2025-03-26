@@ -1,0 +1,1 @@
+we provide the code to use MiniGPT-4 to generate clean caption, for more detail please refer to [MiniGPT4](https://github.com/Vision-CAIR/MiniGPT-4)
