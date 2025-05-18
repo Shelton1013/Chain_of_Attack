@@ -9,6 +9,13 @@ Most existing transfer-based attacks neglect the importance of the semantic corr
 - [28/02/2025] **Chain of Attack** is accepted by CVPR 2025!
 - [24/11/2024] We introduce **Chain of Attack**, a new and efficient transfer-based attacking strategy for VLMs. The manuscript can be found on [arXiv](https://arxiv.org/pdf/2411.15720).
 
+
+## Benchmark of VLM Against Transfer-based Adversarial Attack  
+![benchmark](benchmark_VLM_attack.png)
+
+
+
+
 ## Preparation of clean image-text pairs
 - Clean image: the clean images are from the validation set of [ImageNet-1K](https://www.image-net.org/).
 - Clean text: [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) is adopted to generate clean descriptions for the clean images. The usage is as follows:
@@ -78,6 +85,5 @@ python eval.py \
 }
 ```
 
-## 📄License
-
 ## 🙏Acknowledgement
+Our code is based on [AttackVLM](https://github.com/yunqing-me/AttackVLM). Thanks for their contributions to the community.
