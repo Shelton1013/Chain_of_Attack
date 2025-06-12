@@ -77,11 +77,12 @@ python eval.py \
   
 ## 📚Citation
 ```bibtex
-@article{xie2024chain,
+@inproceedings{xie2025chain,
   title={Chain of Attack: On the Robustness of Vision-Language Models Against Transfer-Based Adversarial Attacks},
   author={Xie, Peng and Bie, Yequan and Mao, Jianda and Song, Yangqiu and Wang, Yang and Chen, Hao and Chen, Kani},
-  journal={arXiv preprint arXiv:2411.15720},
-  year={2024}
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={14679--14689},
+  year={2025}
 }
 ```
 
